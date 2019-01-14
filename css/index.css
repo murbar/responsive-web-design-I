@@ -326,3 +326,29 @@ footer p {
 #services-facts>div:first-child {
   padding-right: 45px;
 }
+
+@media (max-width: 800px) {
+    #wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+    header div {
+        order: -1;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    header nav {
+        justify-content: space-between;
+    }
+    header nav a {
+        flex-grow: initial;
+    }
+    #hero .right {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
