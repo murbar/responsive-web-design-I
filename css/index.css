@@ -155,8 +155,6 @@ h5 {
   margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 /* global */
 
 #wrapper {
@@ -186,35 +184,25 @@ ul li {
 /* header */
 
 header {
-  margin: 20px 0;
+  margin: 25px 0 15px;
   display: flex;
   flex-flow: row wrap;
 }
 
 header div {
-  margin-left: auto;
+  margin-left: 30px;
 }
 
-header nav ul {
-  padding: 10px 0;
+header nav {
+  padding-top: 15px;
   display: flex;
-  margin: 0;
+  flex: 1;
 }
 
-header nav li {
-  list-style: none;
-  line-height: inherit;
-}
-
-header nav li a {
+header nav a {
   text-decoration: none;
   color: gray;
-  padding: 30px;
-  font-size: 0.9em;
-}
-
-header nav li:first-child a {
-  padding-left: 0;
+  flex: 1;
 }
 
 /* hero */
