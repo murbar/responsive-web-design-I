@@ -322,9 +322,15 @@ footer p {
   display: flex;
   padding: 40px 0;
 }
+#services-facts div {
+    width: 50%;
+}
 
 #services-facts>div:first-child {
   padding-right: 45px;
+}
+#services-facts div img {
+    max-width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -375,5 +381,26 @@ footer p {
     }
     main .top, main .bottom {
         flex-flow: column;
+    }
+    #services-list {
+        flex-flow: column;
+    }
+    .services-list-item {
+        width: 100%;
+    }
+    #services-facts {
+        flex-flow: column;
+    }
+    #services-facts div {
+        width: 100%;
+    }
+    #services-facts div:last-child {
+        order: -1;
+        padding-bottom: 20px;
+    }
+    #services-facts div img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
 }
