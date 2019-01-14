@@ -322,85 +322,104 @@ footer p {
   display: flex;
   padding: 40px 0;
 }
-#services-facts div {
-    width: 50%;
+
+#services-facts>div {
+  width: 50%;
 }
 
 #services-facts>div:first-child {
   padding-right: 45px;
 }
-#services-facts div img {
-    max-width: 100%;
+
+#services-facts>div img {
+  max-width: 100%;
 }
 
 @media (max-width: 800px) {
-    #wrapper {
-        width: 100%;
-        padding: 0 20px;
-    }
-    header div {
-        order: -1;
-        width: 100%;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    header nav {
-        justify-content: space-between;
-    }
-    header nav a {
-        flex-grow: initial;
-    }
-    #hero .right {
-        display: none;
-    }
+  #wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  header>div {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  header nav {
+    justify-content: space-between;
+  }
+
+  header nav a {
+    flex-grow: initial;
+  }
+
+  #hero .right {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
-    header {
-        margin-top: 20px;
-    }
-    header div {
-        margin: 0;
-    }
-    header nav {
-        padding: 0;
-        flex-flow: column;
-    }
-    header nav a {
-        text-align: center;
-        padding: 20px 0;
-        border-top: 1px solid gray;
-        margin: 0 -20px;
-        font-size: 1.2em;
-    }
-    header nav a:last-child {
-        border-bottom: 1px solid gray;
-    }
-    #hero {
-        padding: 40px 0 70px;
-    }
-    main .top, main .bottom {
-        flex-flow: column;
-    }
-    #services-list {
-        flex-flow: column;
-    }
-    .services-list-item {
-        width: 100%;
-    }
-    #services-facts {
-        flex-flow: column;
-    }
-    #services-facts div {
-        width: 100%;
-    }
-    #services-facts div:last-child {
-        order: -1;
-        padding-bottom: 20px;
-    }
-    #services-facts div img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
+  header {
+    margin-top: 20px;
+  }
+
+  header div {
+    margin: 0;
+  }
+
+  header nav {
+    padding: 0;
+    flex-flow: column;
+  }
+
+  header nav a {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid gray;
+    margin: 0 -20px;
+    font-size: 1.2em;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid gray;
+  }
+
+  #hero {
+    padding: 40px 0 70px;
+  }
+
+  main .top,
+  main .bottom {
+    flex-flow: column;
+  }
+
+  #services-list {
+    flex-flow: column;
+  }
+
+  .services-list-item {
+    width: 100%;
+  }
+
+  #services-facts {
+    flex-flow: column;
+  }
+
+  #services-facts>div {
+    width: 100%;
+  }
+
+  #services-facts>div:last-child {
+    order: -1;
+    padding-bottom: 20px;
+  }
+
+  #services-facts>div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 }
